@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+/* change font to Roboto for all headers */
+h1 {font-family: 'Roboto', sans-serif;}
+h2 {font-family: 'Roboto', sans-serif;}
+h3 {font-family: 'Roboto', sans-serif;}
+h4 {font-family: 'Roboto', sans-serif;}
+h5 {font-family: 'Roboto', sans-serif;}
+h6 {font-family: 'Roboto', sans-serif;}
+
+/* disable padding to make sure screen is full-screen */
+.content {
+  padding: 0;
+  padding-left: 0;
+}
+
+/* login page background */
+.div-login-full {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: calculate(100vh);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(library.png);
+  margin: 0;
+  padding: 0;
+}
+
+/* full-screen empty div */ 
+.div-full {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: calculate(100vh);
+  margin: 0;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+/* overlay colored div for half the page */
+.div-login-overlay {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30, 80, 120);
+  opacity: 0.8;
+}
+
+/* main button used in the app (blue) */
+.btn-primary {
+  background-color: rgb(30, 80, 120);
+  border-color: rgb(30, 80, 120);
+  color: #ffffff;
+}
+
+/* define panel class that can be centered */
+.panel-center {
+  border-color: #ffffff;
+  border-color: rgba(255,255,255,0);
+  background-color: #ffffff;
+  background-color: rgba(255,255,255,0);
+  border-radius: 8px;
+  margin: auto;
+  transform: translate(-50%, -50%);
+}
+
+/* change color of the navbar menu */
+.skin-blue .main-header .navbar {
+  background-color: #2b2b2b;
+}
+
+/* increase left margin to allow for more logo text */
+.sidebar-mini.sidebar-collapse .main-header .navbar {
+    margin-left: 75px;
+}
+
+/* chang style of top left 'logo' panel */
+.sidebar-mini.sidebar-collapse .main-header .logo {
+  font-family: 'Roboto', sans-serif;
+  width: 75px;
+  background-color: #2b2b2b ;
+}
+
+/* change style of sidebar */
+.skin-blue .main-sidebar {
+  background-color: #ffffff;
+}
+
+/* remove toggle button (allways collapse sidebar) */
+.skin-blue .main-header .navbar .sidebar-toggle {
+    display: none;
+}
+
+/* change style of sidebar buttons */
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+    color: #2b2b2b;
+    background: #f7f7f7;
+    border-left-color: #aafff3;
+}

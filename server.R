@@ -7,6 +7,12 @@ source("ML_class_v01_20190712.R")
 global_cfg = list()
 global_cfg$savelog = F 
 
+downloadObjUI <- function(id) {
+  ns <- NS(id)
+  
+  downloadButton(ns("data_download"), label = "Download data", class = "btn-primary")
+}
+
 shinyServer(
   function(input, output, session) {
     # SETTINGS FOR SERVER -----------------
@@ -21,11 +27,6 @@ shinyServer(
     output$EARL_sidebar <- renderMenu({earl_menu()})
     
     # Observe events
-    downloadObjUI <- function(id) {
-      ns <- NS(id)
-      
-      downloadButton(ns("data_download"), label = "Download data", class = "btn-primary")
-    }
     
     downloadObj <- function(input, output, session, data,extension) {
       
